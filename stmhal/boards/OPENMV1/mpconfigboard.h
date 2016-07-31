@@ -30,6 +30,17 @@
 #define MICROPY_HW_I2C2_SCL (pin_B10)
 #define MICROPY_HW_I2C2_SDA (pin_B11)
 
+// SPI busses
+#define MICROPY_HW_SPI3_NSS  (pin_A15)
+#define MICROPY_HW_SPI3_SCK  (pin_C10)
+#define MICROPY_HW_SPI3_MISO (pin_C11)
+#define MICROPY_HW_SPI3_MOSI (pin_C12)
+
+// SD card detect switch
+#define MICROPY_HW_SDCARD_DETECT_PIN        (pin_C0)
+#define MICROPY_HW_SDCARD_DETECT_PULL       (GPIO_PULLUP)
+#define MICROPY_HW_SDCARD_DETECT_PRESENT    (GPIO_PIN_RESET)
+
 // USB config
 #define MICROPY_HW_USB_VBUS_DETECT_PIN (pin_A9)
 

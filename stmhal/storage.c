@@ -162,9 +162,6 @@ void storage_init(void) {
         flash_cache_sector_id = 0;
         flash_tick_counter_last_write = 0;
         flash_is_initialised = true;
-        #ifdef OPENMV1
-        CACHE_MEM_START_ADDR = gc_alloc(16*1024, false);
-        #endif
     }
 
     // Enable the flash IRQ, which is used to also call our storage IRQ handler

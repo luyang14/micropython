@@ -79,8 +79,9 @@ STATIC const mp_map_elem_t mp_module_network_globals_table[] = {
     #if MICROPY_PY_CC3K
     { MP_OBJ_NEW_QSTR(MP_QSTR_CC3K), (mp_obj_t)&mod_network_nic_type_cc3k },
     #endif
-
+    #if MICROPY_PY_WINC1500
     { MP_OBJ_NEW_QSTR(MP_QSTR_WINC), (mp_obj_t)&mod_network_nic_type_winc },
+	#endif
     { MP_OBJ_NEW_QSTR(MP_QSTR_route), (mp_obj_t)&network_route_obj },
 };
 
